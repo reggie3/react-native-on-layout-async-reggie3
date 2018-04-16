@@ -1,23 +1,23 @@
 import React, { Component } from 'react'
 
-export default class OnLayout extends Component {
-	constructor(props) {
-		super(props)
-		this.state = { dimensions: { width: 0, height: 0 } }
-	}
+export default (Placeholder) =>
+	class OnLayout extends Component {
+		state = { dimensions: null }
 
-	onLayout = e => {
-		this.setState({
-			dimensions: e.nativeEvent.layout,
-		})
-	}
+		onLayout = eventHandler => e => {
+			if (eventHandler) {
+				eventHandler(e)
+			}
+			this.setState({
+				dimensions: e.nativeEvent.layout,
+			})
+		}
 
-	render() {
-		let { children, ...props } = this.props
-		return (
-			<View {...props} onLayout={this.onLayout}>
-				{this.props.children(this.state.dimensions)}
-			</View>
-		)
+		render() {
+			const { children, onLayout: eventHandler, ...props } = this.props
+			const { dimensions } = this.state
+			return dimensions
+				? <Placeholder {...props} onLayout={this.onLayout(eventHandler)} />
+				: children(dimensions)
+		}
 	}
-}
