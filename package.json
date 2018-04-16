@@ -1,6 +1,6 @@
 {
 	"name": "react-native-on-layout-async",
-	"version": "2.0.3",
+	"version": "2.0.4",
 	"description":
 		"A component for React Native that allows easy access to a view's rendered size asynchronously.",
 	"main": "index.js",
