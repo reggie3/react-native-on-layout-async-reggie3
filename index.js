@@ -17,7 +17,7 @@ export default (Placeholder) =>
 			const { children, onLayout: eventHandler, ...props } = this.props
 			const { dimensions } = this.state
 			return dimensions
-				? <Placeholder {...props} onLayout={this.onLayout(eventHandler)} />
-				: children({ width: dimensions.width, length: dimensions.length })
+				? children({ width: dimensions.width, length: dimensions.length })
+				: <Placeholder {...props} onLayout={this.onLayout(eventHandler)} />
 		}
 	}
