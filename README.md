@@ -1,13 +1,20 @@
 # react-native-on-layout-async
 
-Having to get a components rendered dimensions is a pretty common pattern in React Native and this is a component that makes doing so easy.
+Based on non-async version by @shichongrui: https://github.com/shichongrui/react-native-on-layout
 
-    import OnLayout from 'react-native-on-layout'
+The non-async version first calls the function-as-child with `{ width: 0, height: 0 }` and again later once updated, leading to layout jankiness. This renders a placeholder or loading component first, and calls the function-as-child only when the values are known.
 
-    <OnLayout>
+    import onLayout from 'react-native-on-layout'
+    
+    const SizeControlledDynamicallyByParent = View
+    const Loading = SizeControlledDynamicallyByParent
+    
+    const Component = onLayout(Loading)
+
+    <Component>
         {({ width, height}) => (
             <Text>{width} {height}</text>
         )}
-    </OnLayout>
-
-OnLayout renders a `View` component to do `onLayout` so you can pass any `View` prop to `OnLayout` and it will pass them as props to the rendered `View` component.
+    </Component>
+    
+This utilizes the function-as-child and higher-order-component paradigms to making layout more deterministic
