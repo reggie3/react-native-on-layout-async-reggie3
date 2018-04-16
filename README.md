@@ -1,4 +1,4 @@
-# react-native-on-layout
+# react-native-on-layout-async
 
 Having to get a components rendered dimensions is a pretty common pattern in React Native and this is a component that makes doing so easy.
 

@@ -1,27 +1,18 @@
 {
-  "name": "react-native-on-layout",
-  "version": "2.0.2",
-  "description": "A component for React Native that allows easy access to a view's rendered size",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "repositotry": "git@github.com:shichongrui/react-native-on-layout.git",
-  "author": "Matthew Sessions <shichongrui@gmail.com> (http://www.matthewsessions.com/)",
-  "license": "MIT",
-  "peerDependencies": {
-    "react": "16.0.0-alpha.12",
-    "react-native": "^0.46.1"
-  },
-  "devDependencies": {
-    "babel-jest": "^20.0.3",
-    "babel-preset-react-native": "^2.1.0",
-    "jest": "^20.0.4",
-    "react": "16.0.0-alpha.12",
-    "react-native": "^0.46.1",
-    "react-test-renderer": "16.0.0-alpha.12"
-  },
-  "jest": {
-    "preset": "react-native"
-  }
+	"name": "react-native-on-layout-async",
+	"version": "2.0.2",
+	"description":
+		"A component for React Native that allows easy access to a view's rendered size asynchronously.",
+	"main": "index.js",
+	"repositotry": "git@github.com:shichongrui/react-native-on-layout.git",
+	"author":
+		"M. Walker Wells <walker@mwalkerwells.com> (http://www.mwalkerwells.com/)",
+	"license": "MIT",
+	"peerDependencies": {
+		"react": "16.0.0-alpha.12",
+		"react-native": "^0.46.1"
+	},
+	"devDependencies": {
+		"react": "16.0.0-alpha.12"
+	}
 }
