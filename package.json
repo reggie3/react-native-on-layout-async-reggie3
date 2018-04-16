@@ -1,10 +1,10 @@
 {
 	"name": "react-native-on-layout-async",
-	"version": "2.0.4",
+	"version": "2.0.5",
 	"description":
 		"A component for React Native that allows easy access to a view's rendered size asynchronously.",
 	"main": "index.js",
-	"repositotry": "git@github.com:shichongrui/react-native-on-layout.git",
+	"repositotry": "git@github.com:mwalkerwells/react-native-on-layout-async.git",
 	"author":
 		"M. Walker Wells <walker@mwalkerwells.com> (http://www.mwalkerwells.com/)",
 	"license": "MIT",
