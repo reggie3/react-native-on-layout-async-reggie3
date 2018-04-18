@@ -1,6 +1,6 @@
 {
 	"name": "react-native-on-layout-async",
-	"version": "2.0.8",
+	"version": "2.0.9",
 	"description":
 		"A component for React Native that allows easy access to a view's rendered size asynchronously.",
 	"main": "index.js",
@@ -9,10 +9,6 @@
 		"M. Walker Wells <walker@mwalkerwells.com> (http://www.mwalkerwells.com/)",
 	"license": "MIT",
 	"peerDependencies": {
-		"react": "16.0.0-alpha.12",
-		"react-native": "^0.46.1"
-	},
-	"devDependencies": {
-		"react": "16.0.0-alpha.12"
+		"react": "^16.0.0"
 	}
 }
